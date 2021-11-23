@@ -15,6 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        Resources.UI.Appearance.navBar()
+        
         let mainVC = UINavigationController()
         self.mainCoordinator = PokemonCoordinator(rootController: mainVC)
         self.mainCoordinator?.start()
